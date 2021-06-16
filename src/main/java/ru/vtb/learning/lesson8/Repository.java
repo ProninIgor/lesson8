@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 
-public class Repository<T extends User> {
+public class Repository<T> {
     private EntityManagerFactory factory;
     private Class<T> type;
 

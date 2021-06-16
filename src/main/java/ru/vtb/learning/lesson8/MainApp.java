@@ -21,6 +21,16 @@ public class MainApp {
         User testUser2 = repository.getById(2);
         System.out.println(testUser2.getId() + " - " + testUser2.getName());
 
+        Repository<Item> itemRepository = new Repository<>(factory, Item.class);
+        Item item1 = itemRepository.getById(1);
+
+        Item item2 = new Item();
+        item2.setTitle("Title1");
+        itemRepository.save(item2);
+
+        Item testItem2 = itemRepository.getById(2);
+        System.out.println(testItem2.getId() + " - " + testItem2.getTitle());
+
         factory.close();
     }
 }
