@@ -15,5 +15,6 @@
         <property name="hibernate.hbm2ddl.auto">create</property>
 
         <mapping class="ru.vtb.learning.lesson8.User"/>
+        <mapping class="ru.vtb.learning.lesson8.Item"/>
     </session-factory>
 </hibernate-configuration>
